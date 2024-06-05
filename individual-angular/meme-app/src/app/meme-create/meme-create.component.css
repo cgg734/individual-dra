@@ -1,0 +1,127 @@
+.meme-create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #0d47a1, #90caf9); /* Degradado de azul oscuro a azul claro */
+  color: #fff; /* Texto blanco */
+  border-style: outset;
+  border-radius: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff; /* Texto blanco */
+}
+
+.meme-create-content {
+  display: flex;
+  gap: 30px;
+}
+
+.meme-preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meme-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff; /* Texto blanco */
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 5px solid #000000; /* Borde blanco */
+  border-radius: 5px;
+  font-size: 1rem;;
+  color: #000000; /* Texto blanco */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-button {
+  background: linear-gradient(to bottom, #0d47a1, #1565c0); /* Degradado de azul oscuro a azul intermedio */
+  border: none;
+  color: white;
+}
+
+.create-button:hover {
+  background: linear-gradient(to bottom, #0d47a1, #0d539f); /* Degradado de azul oscuro a un tono más oscuro */
+}
+
+.reset-button {
+  background: linear-gradient(to bottom, #b71c1c, #8b0000); /* Degradado de rojo oscuro a un tono más oscuro */
+  border: none;
+  color: white;
+}
+
+.reset-button:hover {
+  background: linear-gradient(to bottom, #b71c1c, #8b0000); /* Degradado de rojo oscuro a un tono más oscuro */
+}
+
+.back-button {
+  background: linear-gradient(to bottom, #1b5e20, #1b5e20); /* Degradado de verde oscuro a azul oscuro */
+  border: none;
+  color: white;
+  align-self: center;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: linear-gradient(to bottom, #1b5e20, #0d47a1); /* Degradado de verde oscuro a azul oscuro */
+}
+
+.created-meme {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.created-meme img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Volver{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

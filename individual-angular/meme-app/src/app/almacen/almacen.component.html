@@ -1,0 +1,8 @@
+<div class="almacen-container">
+  <h2>Almacen de Memes</h2>
+  <div class="meme-list">
+    <div *ngFor="let meme of memes" class="meme-card">
+      <img [src]="meme.url" alt="Meme">
+    </div>
+  </div>
+</div>

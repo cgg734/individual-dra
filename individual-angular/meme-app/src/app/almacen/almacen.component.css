@@ -1,0 +1,28 @@
+.almacen-container {
+    padding: 20px;
+  }
+  
+  .meme-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .meme-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .meme-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .meme-card h3 {
+    font-size: 1rem;
+    color: #333;
+  }
+  

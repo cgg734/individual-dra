@@ -1,0 +1,13 @@
+<div class="fondo">
+  <div class="search-container">
+    <input type="text" placeholder="Buscar memes..." [(ngModel)]="searchTerm" class="search-bar">
+  </div>
+  <h2>MEMES DISPONIBLES</h2>
+  <div class="meme-list">
+    <div *ngFor="let meme of filteredMemes()" class="meme-card">
+      <img [src]="meme.url" alt="{{ meme.name }}">
+      <h3>{{ meme.name }}</h3>
+      <button (click)="selectMeme(meme)">Seleccionar</button>
+    </div>
+  </div>
+</div>

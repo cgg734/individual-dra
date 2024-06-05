@@ -1,0 +1,16 @@
+<div class="Todo">
+  <div class="app-header">
+    <div class="cabecera">
+     <h1>MEME-APP</h1>
+     <img src="assets/logo-Photoroom.png" alt="Meme" class="meme-logo">
+    </div>
+    <div class="lista">
+      <button class="boton" (click)="goToLista()">Lista de Memes</button>
+      <button class="boton" (click)="goToAlmacen()">Almacen de Memes</button>
+      <button class="boton" (click)="goToInfo()">Sobre Memes</button>
+    </div>
+  </div>
+  <div class="app-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

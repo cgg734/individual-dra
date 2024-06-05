@@ -1,0 +1,105 @@
+/* Estilo general */
+body {
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #01579b, #90caf9); /* Degradado de azul oscuro a azul claro */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  color: #fff; /* Texto blanco */
+}
+
+/* Contenedor de la lista de memes */
+.meme-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0; /* Eliminar el margen para que no haya espacio adicional */
+  height: 100%; /* Para ocupar toda la altura disponible */
+  overflow-y: auto; /* Agregar desplazamiento vertical si la lista es demasiado larga */
+}
+
+/* Carta de meme individual */
+.meme-card {
+  background-color: #f5f5f5; /* Gris claro */
+  border: 1px solid #64b5f6; /* Azul claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meme-card h3 {
+  font-size: 1.1rem;
+  color: #0d47a1; /* Azul muy oscuro */
+  margin: 10px 0;
+}
+
+.meme-card button {
+  background-color: #1565c0; /* Azul oscuro */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.meme-card button:hover {
+  background-color: #0d47a1; /* Azul muy oscuro */
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #0d47a1; /* Borde azul muy oscuro */
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #0d47a1; /* Borde azul muy oscuro */
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.search-bar::placeholder {
+  color: #90caf9; /* Azul pastel */
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover en las cartas */
+.meme-card:hover {
+  transform: translateY(-5px);
+}

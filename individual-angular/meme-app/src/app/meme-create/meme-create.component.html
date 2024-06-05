@@ -1,0 +1,34 @@
+<div class="meme-create-container">
+  <h2>Crea Tu Meme</h2>
+  <div class="meme-create-content">
+    <div class="meme-preview" *ngIf="templateId; else noMemeSelected">
+      <img [src]="sharedMemeService.getMeme().url" alt="Selected Meme" class="meme-image">
+    </div>
+    
+    <ng-template #noMemeSelected>
+      <div>
+        <p>Por favor, selecciona un meme de la lista.</p>
+        <div class="Volver">
+         <button class="back-button" (click)="goBack()">Volver</button>
+        </div>
+      </div>
+    </ng-template>
+
+    <div class="meme-form-container">
+      <form (ngSubmit)="createMeme()" class="meme-form" *ngIf="templateId">
+        <div class="form-group" *ngFor="let text of texts; let i = index; trackBy: trackByFn">
+          <label [for]="'text' + i">Texto {{ i + 1 }}</label>
+          <input type="text" [id]="'text' + i" [(ngModel)]="texts[i]" [name]="'text' + i" required>
+        </div>
+        <button type="button" class="create-button" (click)="addTextField()">Añadir Texto</button>
+        <button type="submit" class="create-button">Crear Meme</button>
+        <button type="button" (click)="resetMeme()" class="reset-button">Resetear</button>
+      </form>
+    </div>
+  </div>
+
+  <div *ngIf="memeUrl" class="created-meme">
+    <h3>Tu Meme Generado</h3>
+    <img [src]="memeUrl" alt="Created Meme">
+  </div>
+</div>

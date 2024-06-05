@@ -1,0 +1,59 @@
+.Todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #0d47a1, #1565c0);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: #000000; /* Degradado de azul oscuro a azul intermedio */
+  border: 3px solid wheat; /* Borde blanco */
+  color: #fff; /* Texto blanco */
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+} 
+
+.meme-logo {
+  height: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 20px; /* Espacio entre el logo y los botones */
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.boton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffab40; /* Color de botón */
+  color: #fff; /* Texto blanco */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #ff9100; /* Color de botón al pasar el cursor */
+}
+
+.app-container {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #0d47a1, #1565c0);
+  min-height: 100vh;
+}
