@@ -1,0 +1,41 @@
+version: latest
+
+services:
+  frontend:
+    build:
+      context: ./individual-angular/meme-app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    command: npm start
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./individual-springboot/meme-app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/cgg734
+      SPRING_DATASOURCE_USERNAME: cgg734
+      SPRING_DATASOURCE_PASSWORD: cgg734
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: cgg734
+      POSTGRES_PASSWORD: cgg734
+      POSTGRES_DB: cgg734
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
