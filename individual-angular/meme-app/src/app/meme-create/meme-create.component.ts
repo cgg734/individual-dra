@@ -3,7 +3,7 @@ import { MemeService } from '../meme.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 import { SharedMemeService } from '../shared-meme.service';
 import { Router } from '@angular/router'; 
 import { Meme } from '../meme';
@@ -13,7 +13,11 @@ import { Meme } from '../meme';
   standalone: true,
   templateUrl: './meme-create.component.html',
   styleUrls: ['./meme-create.component.css'],
-  imports: [FormsModule, CommonModule, NgIf, HttpClientModule]
+  imports: [FormsModule, CommonModule, NgIf, 
+// TODO: `HttpClientModule` should not be imported into a component directly.
+// Please refactor the code to add `provideHttpClient()` call to the provider list in the
+// application bootstrap logic and remove the `HttpClientModule` import from this component.
+HttpClientModule]
 })
 export class MemeCreateComponent implements OnInit {
 

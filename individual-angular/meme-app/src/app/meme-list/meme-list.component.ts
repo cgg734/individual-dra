@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MemeService } from '../meme.service';
 import { SharedMemeService } from '../shared-meme.service';
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { NgFor } from '@angular/common';
@@ -13,7 +13,11 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   templateUrl: './meme-list.component.html',
   styleUrls: ['./meme-list.component.css'],
-  imports: [HttpClientModule, CommonModule, NgIf, NgFor, FormsModule]
+  imports: [
+// TODO: `HttpClientModule` should not be imported into a component directly.
+// Please refactor the code to add `provideHttpClient()` call to the provider list in the
+// application bootstrap logic and remove the `HttpClientModule` import from this component.
+HttpClientModule, CommonModule, NgIf, NgFor, FormsModule]
 })
 export class MemeListComponent implements OnInit {
   memes: any[] = [];
