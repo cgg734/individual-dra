@@ -45,4 +45,5 @@ export class MemeListComponent implements OnInit {
     this.sharedMemeService.setMeme(meme);
     this.router.navigate(['/create']);
   }
+  
 }
