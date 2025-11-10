@@ -4,7 +4,10 @@ import {
   BrowserModule,
   EVENT_MANAGER_PLUGINS,
   EventManagerPlugin
-} from "./chunk-PLOQON5H.js";
+} from "./chunk-ARQZVA2J.js";
+import {
+  HTTP_ROOT_INTERCEPTOR_FNS
+} from "./chunk-NUJVJIUY.js";
 import {
   NullViewportScroller,
   PLATFORM_SERVER_ID,
@@ -13,9 +16,6 @@ import {
   getDOM,
   setRootDomAdapter
 } from "./chunk-5NKROQBM.js";
-import {
-  HTTP_ROOT_INTERCEPTOR_FNS
-} from "./chunk-NUJVJIUY.js";
 import {
   XhrFactory
 } from "./chunk-YQZF7T32.js";
@@ -17951,4 +17951,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-D2CWSHIS.js.map
+//# sourceMappingURL=chunk-WIRM3J4I.js.map

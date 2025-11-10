@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { MemeService } from '../meme.service';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedMemeService } from '../shared-meme.service';
 import { Router } from '@angular/router'; 
 import { Meme } from '../meme';
-
+import { FormsModule } from '@angular/forms';
 @Component({
     selector: 'app-meme-create',
     templateUrl: './meme-create.component.html',
@@ -18,6 +17,7 @@ import { Meme } from '../meme';
         // application bootstrap logic and remove the `HttpClientModule` import from this component.
         HttpClientModule]
 })
+
 export class MemeCreateComponent implements OnInit {
 
   templateId: string = '';
