@@ -9,15 +9,14 @@ import { Router } from '@angular/router';
 import { Meme } from '../meme';
 
 @Component({
-  selector: 'app-meme-create',
-  standalone: true,
-  templateUrl: './meme-create.component.html',
-  styleUrls: ['./meme-create.component.css'],
-  imports: [FormsModule, CommonModule, NgIf, 
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule]
+    selector: 'app-meme-create',
+    templateUrl: './meme-create.component.html',
+    styleUrls: ['./meme-create.component.css'],
+    imports: [FormsModule, CommonModule, NgIf,
+        // TODO: `HttpClientModule` should not be imported into a component directly.
+        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
+        // application bootstrap logic and remove the `HttpClientModule` import from this component.
+        HttpClientModule]
 })
 export class MemeCreateComponent implements OnInit {
 

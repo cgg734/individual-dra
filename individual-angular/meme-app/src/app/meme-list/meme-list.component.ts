@@ -9,15 +9,15 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-meme-list',
-  standalone: true,
-  templateUrl: './meme-list.component.html',
-  styleUrls: ['./meme-list.component.css'],
-  imports: [
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule, CommonModule, NgIf, NgFor, FormsModule]
+    selector: 'app-meme-list',
+    templateUrl: './meme-list.component.html',
+    styleUrls: ['./meme-list.component.css'],
+    imports: [
+        // TODO: `HttpClientModule` should not be imported into a component directly.
+        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
+        // application bootstrap logic and remove the `HttpClientModule` import from this component.
+        HttpClientModule, CommonModule, NgIf, NgFor, FormsModule
+    ]
 })
 export class MemeListComponent implements OnInit {
   memes: any[] = [];
