@@ -3,7 +3,7 @@ import { MemeService } from '../meme.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
-import {} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { SharedMemeService } from '../shared-meme.service';
 import { Router } from '@angular/router'; 
 import { Meme } from '../meme';

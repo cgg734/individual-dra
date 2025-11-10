@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MemeService } from '../meme.service';
 import { SharedMemeService } from '../shared-meme.service';
-import {} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { NgFor } from '@angular/common';
